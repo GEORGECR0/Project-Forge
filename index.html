@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloxd.io iFrame</title>
+    
+    <!-- Link to Remix Icons (For Icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    
+    <link rel="stylesheet" href="style.css"> <!-- Linking External CSS -->
+</head>
+<body>
+  <div class="fps-counter" id="fpsCounter">FPS: 0</div>
+  <div class="ping-counter" id="pingCounter">Ping: 0ms</div>
+  <img id="crosshair" src="assets/images/7be1c5f3-9ad1-11ef-b170-45e28d82b1ad.gif" alt="Crosshair">
+
+
+       <div class="MenuBar">
+        <a href="index.html">
+          <i class="ri-play-fill"></i>
+          <span>Bloxd</span>
+        </a>
+        <a href="">
+          <i class="ri-shopping-cart-2-fill"></i>
+          <span>Shop</span>
+        </a>
+        <a href="">
+          <i class="ri-tools-fill"></i>
+          <span>Creator</span>
+        </a>
+        <a href="">
+          <i class="ri-information-2-fill"></i>
+          <span>Info</span>
+        </a>
+
+        <a id="acc-btn"href="">
+          <i class="ri-account-circle-fill"></i>
+          <span>Account</span>
+        </a>
+
+       </div>  
+
+
+
+
+    <div class="top-right-container">
+      <h1>TITLE</h1>
+        <button id="fullscreen-btn" onclick="toggleIcon()">
+            <i class="ri-fullscreen-line"></i> 
+        </button>
+
+        <button id="modmenu-btn" onclick="togglemenu()">
+          <i class="ri-gamepad-line"></i>
+        </button>
+    </div>
+
+    <!-- iFrame -->
+    <iframe id="game-iframe" src="https://bloxd.io/" scrolling="no"></iframe>
+
+    <div id="Mod-Menu">
+      <div class="Mods">
+        <div class="Mod">
+          <h1 class="ModTitle">FPS COUNTER</h1>
+          <!-- Image -->
+<!-- Rounded switch -->
+<label class="switch">
+  <input id="fpsToggle" type="checkbox">
+  <span class="slider round"></span>
+</label>
+        </div>
+        <div class="Mod">
+          <h1 class="ModTitle">CPS COUNTER</h1>
+          <img src="assets/images/Cps_Counter.png">
+<!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+        </div>
+        <div class="Mod">
+          <h1 class="ModTitle">CROSSHAIR</h1>
+          <img src="assets/images/Crosshairs.png">
+
+<label class="switch">
+  <input id="crosshairToggle" type="checkbox">
+  <span class="slider round"></span>
+</label>
+        </div>
+        <div class="Mod">
+          <h1 class="ModTitle">PING COUNTER</h1>
+          <img src="assets/images/Ping_Counter.png">
+<label class="switch">
+  <input id="pingToggle" type="checkbox">
+  <span class="slider round"></span>
+</label>
+        </div>
+        <div class="Mod">
+          <h1 class="ModTitle">KEYSTROKES</h1>
+          <img src="assets/images/Keystrokes.png">
+<!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+        </div>
+        <div class="Mod">
+          <h1 class="ModTitle">FILTERS</h1>
+<!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+        </div>
+        <div class="Mod">
+          <h1 class="ModTitle">BRIGHTNESS</h1>
+          <img src="assets/images/Night_Mode.png">
+<!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+        </div>
+        <div class="Mod">
+          <h1 class="ModTitle">RESOLUTION</h1>
+          <img src="assets/images/Resolution_Adjuster.png">
+<!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+        </div>
+        <div class="Mod">
+          <h1 class="ModTitle"></h1>
+<!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>
